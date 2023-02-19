@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="hero">
+<nav>
+    <img src="images/menu.png"class="menu-img">
+    <img src="images/logo.png"class="logo">
+
+    <ul>
+        <li><a href="">Latest</a></li>
+        <li><a href="">Latest</a></li>
+        <li><a href="">Latest</a></li>
+        <li><a href="">Latest</a></li>
+
+        
+    </ul>
+<button type="button"onclick="toggleBtn()" id="btn"><span></span></button>
+</nav>
+
+<div class="lamp-container">
+    <img src="images/lamp.png"class="lamp">
+    <img src="images/light.png"class="light"id="light">
+
+</div>
+<div class="text-continer">
+    <h1>Latest <br> in Lighting</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <a href="">Check All Collections</a>
+
+    <div class="control">
+        <p>04</p>
+        <div class="line"><span></span></div>
+        <p>05</p>
+    </div>
+</div>
+</div>
+
+
+<script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+
+    }
+</script>
+
+
+</body>
+</html>
